@@ -133,3 +133,5 @@ Release
 bin
 obj
 packages
+*.filters
+CMakeLists\*
