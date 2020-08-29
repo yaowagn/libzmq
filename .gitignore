@@ -125,3 +125,11 @@ zeromq-*.tar.gz
 zeromq-*.zip
 core
 
+builds/cmake/.vs/ZeroMQ/v16/.suo
+
+.vs\
+Debug
+Release
+bin
+obj
+packages

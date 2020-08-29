@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35B5241D-CE77-3F47-B67D-BFF6F57C426D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\bariver996\libzmq\..\include;D:\GitHub\bariver996\libzmq\builds\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\bariver996\libzmq\..\include;D:\GitHub\bariver996\libzmq\builds\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\bariver996\libzmq\..\include;D:\GitHub\bariver996\libzmq\builds\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\bariver996\libzmq\..\include;D:\GitHub\bariver996\libzmq\builds\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GitHub\bariver996\libzmq\tests\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/GitHub/bariver996/libzmq/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GitHub/bariver996/libzmq -BD:/GitHub/bariver996/libzmq/builds/cmake --check-stamp-file D:/GitHub/bariver996/libzmq/builds/cmake/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GitHub\bariver996\libzmq\builds\cmake\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/GitHub/bariver996/libzmq/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GitHub/bariver996/libzmq -BD:/GitHub/bariver996/libzmq/builds/cmake --check-stamp-file D:/GitHub/bariver996/libzmq/builds/cmake/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GitHub\bariver996\libzmq\builds\cmake\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/GitHub/bariver996/libzmq/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GitHub/bariver996/libzmq -BD:/GitHub/bariver996/libzmq/builds/cmake --check-stamp-file D:/GitHub/bariver996/libzmq/builds/cmake/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GitHub\bariver996\libzmq\builds\cmake\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/GitHub/bariver996/libzmq/tests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GitHub/bariver996/libzmq -BD:/GitHub/bariver996/libzmq/builds/cmake --check-stamp-file D:/GitHub/bariver996/libzmq/builds/cmake/tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GitHub\bariver996\libzmq\builds\cmake\tests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\ZERO_CHECK.vcxproj">
+      <Project>{6629C6AF-6BBF-3AD0-907F-C048667F3E70}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_ancillaries.vcxproj">
+      <Project>{FDA85124-57FD-3C8D-BE3E-9D444933F6EA}</Project>
+      <Name>test_ancillaries</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_app_meta.vcxproj">
+      <Project>{4CF2E838-511A-37D6-8CFF-32D9F627FCF2}</Project>
+      <Name>test_app_meta</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_atomics.vcxproj">
+      <Project>{1A87E0A4-3D21-38FF-9B6B-8B49CAA2FDBC}</Project>
+      <Name>test_atomics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_base85.vcxproj">
+      <Project>{022F2D5D-A271-3405-A342-A03DEDA8A893}</Project>
+      <Name>test_base85</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_bind_after_connect_tcp.vcxproj">
+      <Project>{80276775-378C-3902-AD80-DA7079E0E7D3}</Project>
+      <Name>test_bind_after_connect_tcp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_bind_src_address.vcxproj">
+      <Project>{20C37211-F420-36CA-9EB3-92E07AD049D6}</Project>
+      <Name>test_bind_src_address</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_capabilities.vcxproj">
+      <Project>{ECFF3B5A-0F4C-3FFC-83FB-EB7E2E9BF7F1}</Project>
+      <Name>test_capabilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_channel.vcxproj">
+      <Project>{9788F424-FFF3-3A5C-AE93-37C27C13B394}</Project>
+      <Name>test_channel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_client_server.vcxproj">
+      <Project>{ACC0EE49-245A-3FE7-938D-1DB47A948B65}</Project>
+      <Name>test_client_server</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_conflate.vcxproj">
+      <Project>{F3E8C42A-660F-355D-B342-785A0B5F1C2E}</Project>
+      <Name>test_conflate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_connect_resolve.vcxproj">
+      <Project>{45839E14-36FB-3C3D-BD31-4677DF5AC0BD}</Project>
+      <Name>test_connect_resolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_connect_rid.vcxproj">
+      <Project>{292EF0B9-B140-392C-9F2F-957CB2B93F01}</Project>
+      <Name>test_connect_rid</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_ctx_destroy.vcxproj">
+      <Project>{691CC511-F230-39C0-824D-18D19DFE3CAE}</Project>
+      <Name>test_ctx_destroy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_ctx_options.vcxproj">
+      <Project>{309B1F6B-5EB1-359A-8926-925B82C80CA0}</Project>
+      <Name>test_ctx_options</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_dgram.vcxproj">
+      <Project>{923426C9-14D4-36E0-8F14-E076DEF2C92F}</Project>
+      <Name>test_dgram</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_diffserv.vcxproj">
+      <Project>{1C8F3378-19FE-3649-A577-4E6E3F9C2E95}</Project>
+      <Name>test_diffserv</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_disconnect_inproc.vcxproj">
+      <Project>{4C1834FA-782B-3542-B976-F4EAFF2714ED}</Project>
+      <Name>test_disconnect_inproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_disconnect_msg.vcxproj">
+      <Project>{CC52A2FD-F4B6-388D-BCDA-28B356F1698E}</Project>
+      <Name>test_disconnect_msg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_heartbeats.vcxproj">
+      <Project>{3F442989-4178-3A26-97DD-0C2C9AC353D4}</Project>
+      <Name>test_heartbeats</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_hello_msg.vcxproj">
+      <Project>{4460ED0E-737A-3EC4-A5A5-970B8E1CB5CC}</Project>
+      <Name>test_hello_msg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_hwm.vcxproj">
+      <Project>{0D5B5E56-9892-308B-A736-090E39811579}</Project>
+      <Name>test_hwm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_hwm_pubsub.vcxproj">
+      <Project>{66C97261-6C0B-350D-8CBF-4E7E5B6C3E9B}</Project>
+      <Name>test_hwm_pubsub</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_immediate.vcxproj">
+      <Project>{61F63488-A09A-3ABF-8D14-DE50D69B0ACC}</Project>
+      <Name>test_immediate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_inproc_connect.vcxproj">
+      <Project>{F6D22ACD-F520-313A-A34A-5ACF6EFB726D}</Project>
+      <Name>test_inproc_connect</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_invalid_rep.vcxproj">
+      <Project>{0E811326-46D4-3AEB-AA12-2221D95C011E}</Project>
+      <Name>test_invalid_rep</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_iov.vcxproj">
+      <Project>{B89659EE-151E-30B0-891E-F5F04CD22B07}</Project>
+      <Name>test_iov</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_ipc_wildcard.vcxproj">
+      <Project>{28F233B5-2169-36D5-BC23-967DBF6F6216}</Project>
+      <Name>test_ipc_wildcard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_issue_566.vcxproj">
+      <Project>{0CF8E771-9F58-3B7E-B52E-B45A39B5B339}</Project>
+      <Name>test_issue_566</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_last_endpoint.vcxproj">
+      <Project>{4CEA7D19-4907-32E2-BDC2-974A6C8D6F84}</Project>
+      <Name>test_last_endpoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_metadata.vcxproj">
+      <Project>{289AEBD7-D73D-38E1-A85E-413BCE9E5DFF}</Project>
+      <Name>test_metadata</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_mock_pub_sub.vcxproj">
+      <Project>{90DDB5E8-6608-3BAC-ABBB-375A931BEB3F}</Project>
+      <Name>test_mock_pub_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_monitor.vcxproj">
+      <Project>{16554CD2-B457-391E-A450-3557CBE3525D}</Project>
+      <Name>test_monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_msg_ffn.vcxproj">
+      <Project>{4A0D4668-422D-355E-A8DD-136FD3657859}</Project>
+      <Name>test_msg_ffn</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_msg_flags.vcxproj">
+      <Project>{FB68B600-C913-348F-9970-55294587A046}</Project>
+      <Name>test_msg_flags</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_msg_init.vcxproj">
+      <Project>{7F426408-7CC2-3348-B822-7D75A5B5041D}</Project>
+      <Name>test_msg_init</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_pair_inproc.vcxproj">
+      <Project>{7C775C63-CB61-35BC-8A70-1AF031C70FB4}</Project>
+      <Name>test_pair_inproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_pair_ipc.vcxproj">
+      <Project>{FD489CE7-29B3-3EF6-B92C-CD27A7DA9A35}</Project>
+      <Name>test_pair_ipc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_pair_tcp.vcxproj">
+      <Project>{9999DCAF-E8E4-30A8-9746-78CDDE245C0A}</Project>
+      <Name>test_pair_tcp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_peer.vcxproj">
+      <Project>{1152BBDC-741A-3BA9-97CD-FE6E2CFCD3C2}</Project>
+      <Name>test_peer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_poller.vcxproj">
+      <Project>{0D5EC406-7E7C-3EAA-BDC3-F0CCC9BC5749}</Project>
+      <Name>test_poller</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_probe_router.vcxproj">
+      <Project>{895A2BBD-C7AE-3512-BF15-70FB2B72DF2D}</Project>
+      <Name>test_probe_router</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_pub_invert_matching.vcxproj">
+      <Project>{6EA36447-1836-373C-9866-5A324F3BAA73}</Project>
+      <Name>test_pub_invert_matching</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_radio_dish.vcxproj">
+      <Project>{6294ED82-D948-3ACA-B9F8-0BC4403ECD9D}</Project>
+      <Name>test_radio_dish</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_rebind_ipc.vcxproj">
+      <Project>{2D44E5AB-2C69-3FD8-B3E0-722282DAF345}</Project>
+      <Name>test_rebind_ipc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_reconnect_ivl.vcxproj">
+      <Project>{4A64EC50-946C-39EC-9724-A472712B006F}</Project>
+      <Name>test_reconnect_ivl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_reconnect_options.vcxproj">
+      <Project>{CD05AC17-8C03-374E-9E41-A8A7A0A005A0}</Project>
+      <Name>test_reconnect_options</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_req_correlate.vcxproj">
+      <Project>{55140E41-4616-322F-89C6-099E1FDC31AE}</Project>
+      <Name>test_req_correlate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_req_relaxed.vcxproj">
+      <Project>{04CF9D03-4AB1-31BF-84E2-1EC6B678E0C5}</Project>
+      <Name>test_req_relaxed</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_reqrep_device.vcxproj">
+      <Project>{3CAEDFD3-3D31-3ED6-897D-D14B7D85F5BB}</Project>
+      <Name>test_reqrep_device</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_reqrep_inproc.vcxproj">
+      <Project>{00ACC7D1-BBAA-3AF3-BF1E-6816AC79CCFB}</Project>
+      <Name>test_reqrep_inproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_reqrep_ipc.vcxproj">
+      <Project>{9A900549-2C41-34E3-B188-882094B94BD9}</Project>
+      <Name>test_reqrep_ipc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_reqrep_tcp.vcxproj">
+      <Project>{44555CE4-95A8-3B5B-8B47-54D185D014BB}</Project>
+      <Name>test_reqrep_tcp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_router_handover.vcxproj">
+      <Project>{145AAAF4-11BA-3AC3-9085-86B61910CB54}</Project>
+      <Name>test_router_handover</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_router_mandatory.vcxproj">
+      <Project>{295742AB-7593-3E92-8EEC-2990BF3B79D2}</Project>
+      <Name>test_router_mandatory</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_router_notify.vcxproj">
+      <Project>{25463EF9-43E4-3050-825E-75F14C6D971E}</Project>
+      <Name>test_router_notify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_scatter_gather.vcxproj">
+      <Project>{D0E8663F-C278-3756-B6F9-9D33192AC1C7}</Project>
+      <Name>test_scatter_gather</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_security_curve.vcxproj">
+      <Project>{8021C74F-678F-385A-822B-CA927902C650}</Project>
+      <Name>test_security_curve</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_security_no_zap_handler.vcxproj">
+      <Project>{C43DEBA8-96FC-3CDD-9930-EBB77239DE54}</Project>
+      <Name>test_security_no_zap_handler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_security_null.vcxproj">
+      <Project>{B17AC103-171D-3B96-9C5E-1AA8D92CD1B0}</Project>
+      <Name>test_security_null</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_security_plain.vcxproj">
+      <Project>{DC5A5C5D-525F-37B5-9CAC-B4D5F1B04F73}</Project>
+      <Name>test_security_plain</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_security_zap.vcxproj">
+      <Project>{D1449A4B-8752-363A-856E-7442DB9BE7A0}</Project>
+      <Name>test_security_zap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_setsockopt.vcxproj">
+      <Project>{72492D60-0047-3C0B-B584-9942DBDD2C5D}</Project>
+      <Name>test_setsockopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_shutdown_stress.vcxproj">
+      <Project>{15DE5FAB-E6E5-32A0-B147-7947CC944E25}</Project>
+      <Name>test_shutdown_stress</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_socket_null.vcxproj">
+      <Project>{4952FDBA-5AEB-3AF1-B1C6-9377F6BE4542}</Project>
+      <Name>test_socket_null</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_sockopt_hwm.vcxproj">
+      <Project>{DF0A4D74-F0B3-3A89-AB2A-1BFB4F941D6C}</Project>
+      <Name>test_sockopt_hwm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_sodium.vcxproj">
+      <Project>{9823F030-0923-3A8F-9E5C-A0DF51E97B88}</Project>
+      <Name>test_sodium</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_spec_dealer.vcxproj">
+      <Project>{62098D29-4E39-3FE6-935F-4B0368B02012}</Project>
+      <Name>test_spec_dealer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_spec_pushpull.vcxproj">
+      <Project>{8622E64C-E8B8-308E-B251-195E66BE9A51}</Project>
+      <Name>test_spec_pushpull</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_spec_rep.vcxproj">
+      <Project>{129BF216-4397-322E-84B5-A3EDAE2EFEE6}</Project>
+      <Name>test_spec_rep</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_spec_req.vcxproj">
+      <Project>{EF69647A-E717-329A-8B29-E2A1E0521ABA}</Project>
+      <Name>test_spec_req</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_spec_router.vcxproj">
+      <Project>{5D5ACA35-37A1-3236-9733-02287812169F}</Project>
+      <Name>test_spec_router</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_srcfd.vcxproj">
+      <Project>{74CA324B-D839-3C60-A38B-CFA7CF7FC26F}</Project>
+      <Name>test_srcfd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_stream.vcxproj">
+      <Project>{C9807DB9-6538-3F60-BAB8-308D5347AD89}</Project>
+      <Name>test_stream</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_stream_disconnect.vcxproj">
+      <Project>{886E5408-948C-33CC-A56E-7521D8C7C034}</Project>
+      <Name>test_stream_disconnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_stream_empty.vcxproj">
+      <Project>{CC462833-B067-349F-8F83-C2BA1728B6D2}</Project>
+      <Name>test_stream_empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_stream_timeout.vcxproj">
+      <Project>{3C398857-E430-3369-B16C-46911AA25D76}</Project>
+      <Name>test_stream_timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_sub_forward.vcxproj">
+      <Project>{4163467A-E50E-3279-BB24-918F2B48F954}</Project>
+      <Name>test_sub_forward</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_system.vcxproj">
+      <Project>{90714AC1-807B-375C-9F48-E726007F3C55}</Project>
+      <Name>test_system</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_term_endpoint.vcxproj">
+      <Project>{E1EC476F-A9A2-32F6-AE03-2EB88A52523B}</Project>
+      <Name>test_term_endpoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_thread_safe.vcxproj">
+      <Project>{00D0EB4C-3FDE-3F94-85EE-C76304748048}</Project>
+      <Name>test_thread_safe</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_timeo.vcxproj">
+      <Project>{0D1DBF5F-E590-30C8-9AC2-BA5B83648A34}</Project>
+      <Name>test_timeo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_timers.vcxproj">
+      <Project>{18910F0B-690D-3075-A11E-A4AD426CEAF1}</Project>
+      <Name>test_timers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_unbind_wildcard.vcxproj">
+      <Project>{31FA41C9-5B84-3FAF-A8B3-829478BE68B4}</Project>
+      <Name>test_unbind_wildcard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_ws_transport.vcxproj">
+      <Project>{D300B205-4F43-35F2-B410-F6003D2648C1}</Project>
+      <Name>test_ws_transport</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_xpub_manual.vcxproj">
+      <Project>{9B8BCEFF-A0FD-3FF4-BF5E-18A508BF04A2}</Project>
+      <Name>test_xpub_manual</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_xpub_manual_last_value.vcxproj">
+      <Project>{683E0591-E12D-3C25-8263-799E64320FAC}</Project>
+      <Name>test_xpub_manual_last_value</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_xpub_nodrop.vcxproj">
+      <Project>{339242F0-3130-36D2-98DF-D606872A5E5D}</Project>
+      <Name>test_xpub_nodrop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_xpub_verbose.vcxproj">
+      <Project>{B94D8F64-AAE8-36EA-9361-3CB4F73F95F0}</Project>
+      <Name>test_xpub_verbose</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\test_xpub_welcome_msg.vcxproj">
+      <Project>{D7B64CCC-D3CA-3ABF-B857-76A4554FED9E}</Project>
+      <Name>test_xpub_welcome_msg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\testutil.vcxproj">
+      <Project>{30D59F58-8739-3DBC-9767-4CB239417097}</Project>
+      <Name>testutil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\testutil-static.vcxproj">
+      <Project>{7340E38D-1DB6-39C1-9BC8-0660CAC3BA08}</Project>
+      <Name>testutil-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\GitHub\bariver996\libzmq\builds\cmake\tests\unity.vcxproj">
+      <Project>{BC19B0E0-11B8-3717-809A-9983D14C9938}</Project>
+      <Name>unity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
